@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {legacy_createStore as createStore} from 'redux';
-import allReducers from './reducers'; 
+//import allReducers from './reducers'; 
 import { Provider } from 'react-redux';
 //import { createStore } from 'redux';
 // Joshua research on this createStore, and its replacement (i.e configureStore) ASAP
 
 const store = createStore(
-  allReducers,
+ // allReducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
